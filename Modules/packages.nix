@@ -1,0 +1,122 @@
+{ config, pkgs,inputs, ... }:
+
+{
+  environment.systemPackages = with pkgs; [
+vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+   wget
+   xdg-desktop-portal-gtk
+yazi
+bibata-cursors
+niri
+gparted
+ly
+  pkgs.kdePackages.ark
+  pkgs.kdePackages.okular
+kdePackages.filelight
+nautilus
+xwayland-satellite
+ btop
+ iw
+ curl
+prismlauncher
+    inputs.caelestia-shell.packages.${pkgs.stdenv.hostPlatform.system}.default
+cliamp
+libxcvt
+xarchiver
+kdePackages.dolphin
+wine
+wine-wayland
+winetricks
+protontricks
+bottles
+neovim
+zip
+rar
+ghostty_git
+peazip
+fuzzel
+playerctl
+#inputs.zen-browser.packages."${pkgs.system}".default
+pcsx2_git
+vita3k
+#inputs.helium.packages.x86_64-linux.helium
+git
+gh
+ani-cli
+lxappearance
+thunar
+    auto-cpufreq
+    fastfetch
+    jellyfin-tui
+pkgs.wl-clipboard
+mangohud
+goverlay
+noctalia
+dms-shell
+quickshell
+feishin
+    jellyfin-desktop
+    labwc
+    libreoffice-stable
+    nextcloud-client
+    nixd
+    alejandra
+    qbittorrent
+lutris
+shadps4-qtlauncher
+    rnote
+    tailscale
+    upower
+    vesktop
+    vscodium
+    zoom-us
+    brightnessctl
+    wob
+    pavucontrol
+librepods
+bitwarden-desktop
+   nh
+   nix-output-monitor
+   nvd
+cmake
+    localsend
+brave-origin
+    vlc
+lsfg-vk-ui
+    nicotine-plus
+    waydroid
+    tor-browser
+flameshot
+protonup-ng
+xwayland
+libxcb
+qemu
+virt-manager
+librewolf
+ninja 
+unzip 
+kdePackages.extra-cmake-modules
+wayland-protocols 
+vulkan-headers
+heroic
+proton-cachyos_x86_64_v3
+flameshot
+openrgb-with-all-plugins
+rpcs3
+retroarch
+
+jetbrains-mono
+feh
+blueman
+
+qemu
+libvirt
+spice
+spice-vdagent
+spice-protocol
+bluejay
+
+  ];
+}
+
+
